@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-[#e0e5ec] flex justify-center items-center h-screen">
+  <div class="neumorphic p-6 w-80">
+    <input id="disp" type="text" placeholder="0.0"
+      class="neumorphic-input w-full h-16 text-right text-2xl font-bold  mb-4 p-2">
+    <div class="grid grid-cols-4 gap-2">
+      <button id="ac" class="neumorphic-button h-16 text-lg font-bold text-[#42556d]">AC</button>
+      <button id="remove" class="neumorphic-button h-16 text-lg font-bold p-4 text-[#42556d]" title="Backspace"><svg
+          xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-delete">
+          <path
+            d="M10 5a2 2 0 0 0-1.344.519l-6.328 5.74a1 1 0 0 0 0 1.481l6.328 5.741A2 2 0 0 0 10 19h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z" />
+          <path d="m12 9 6 6" />
+          <path d="m18 9-6 6" />
+        </svg></button>
+      <button id="percent" class="neumorphic-button text-[#42556d] h-16 text-lg font-bold">%</button>
+      <button id="add" class="neumorphic-button text-[#42556d] h-16 text-lg font-bold">+</button>
+
+      <button id="seven" class="neumorphic-button text-[#42556d] h-16 text-lg font-bold">7</button>
+      <button id="eight" class="neumorphic-button text-[#42556d] h-16 text-lg font-bold">8</button>
+      <button id="nine" class="neumorphic-button text-[#42556d] h-16 text-lg font-bold">9</button>
+      <button id="div" class="neumorphic-button text-[#42556d] h-16 text-lg font-bold">/</button>
+
+      <button id="four" class="neumorphic-button text-[#42556d] h-16 text-lg font-bold">4</button>
+      <button id="five" class="neumorphic-button text-[#42556d] h-16 text-lg font-bold">5</button>
+      <button id="six" class="neumorphic-button text-[#42556d] h-16 text-lg font-bold">6</button>
+      <button id="mul" class="neumorphic-button text-[#42556d] h-16 text-lg font-bold">*</button>
+
+      <button id="one" class="neumorphic-button text-[#42556d] h-16 text-lg font-bold">1</button>
+      <button id="two" class="neumorphic-button text-[#42556d] h-16 text-lg font-bold">2</button>
+      <button id="three" class="neumorphic-button text-[#42556d] h-16 text-lg font-bold">3</button>
+      <button id="sub" class="neumorphic-button text-[#42556d] h-16 text-lg font-bold">-</button>
+
+      <button id="abs" class="neumorphic-button text-[#42556d] h-16 text-lg font-bold">+/-</button>
+      <button id="zero" class="neumorphic-button text-[#42556d] h-16 text-lg font-bold">0</button>
+      <button id="dec" class="neumorphic-button text-[#42556d] h-16 text-lg font-bold">.</button>
+      <button id="equal" class="neumorphic-button text-[#42556d] h-16 text-lg font-bold">=</button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
